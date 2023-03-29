@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <header class="header">
+            <h1 id="title">Survey Form</h1>
+            <p id="description" class="big-text">Please fill out this form with the required information</p>
+        </header>
+        <form id="survey-form">
+            <fieldset>
+                <div class="form-group">
+                    <label id="name-label" class="big-text" for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" class="big-text" for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="myemail@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" class="big-text" for="number">Age (optional)</label>
+                    <input type="number" class="form-control" id="number" name="age" min="10" max="99" placeholder="Age">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group">
+                    <p class="big-text">How many cars have you owned in your lifetime ?</p>
+                    <select id="dropdown" class="form-control round" name="owned-cars" required="">
+                        <option disabled="" selected="" value="">Select number</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 or more</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p class="big-text">Would you own a Bugatti ?</p>
+                    <label>
+                        <input class="input-radio" name="user-answer" value="definetly" type="radio" checked="">
+                        Definetly
+                    </label>
+                    <label>
+                        <input class="input-radio" name="user-answer" value="maybe" type="radio">
+                        Maybe
+                    </label>
+                    <label>
+                        <input class="input-radio" name="user-answer" value="not-sure" type="radio">
+                        Not sure
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p class="big-text">
+                        What would you like to see improve on the next Bugatti model ?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="engine" type="checkbox">
+                        Engine
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="windows" type="checkbox">
+                        Windows
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="turbo" type="checkbox">
+                        Turbo
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="breaks" type="checkbox">
+                        Breaks
+                    </label>
+                    <label>
+                        <input class="input-checkbox" name="prefer" value="exhaust" type="checkbox">
+                        Exhaust
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="form-group">
+                    <p class="big-text">Any suggestions for the new Bugatti model ?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your Coment here..." rows="4" cols="32"></textarea>
+                </div>
+                <div class="form-group">
+                    <button id="submit" class="submit-button round" type="submit">Submit</button>
+                </div>
+                
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

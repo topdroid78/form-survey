@@ -1,0 +1,76 @@
+body {
+    color: #f9e8cd;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-image: url(https://www.thesun.co.uk/wp-content/uploads/2022/09/NINTCHDBPICT000737350738.jpg?strip=all&w=960);
+    /* padding: 20px; */
+
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+#title {
+    font-size: 2.5rem;
+}
+
+.big-text {
+    font-size: 1.1rem;
+} 
+
+input, select {
+    padding: 0.3rem;
+}
+
+input[type="radio"] {
+    padding-right: 10px;
+}
+
+.container {
+    background-color: #1c222e;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    min-width: 100px;
+}
+
+fieldset {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #d2691e;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+} 
+
+
+#submit {
+    margin-top: 20px;
+    padding: 0.8rem 1.5rem;
+    background-color: #d2691e;
+    border: 1px solid #f9e8cd;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#submit:hover {
+    background-color: #f9e8cd;
+}
+
+#submit:active {
+    background-color: #d2691e;
+}
+
+.round {
+    border-radius: 100px;
+}
+
+
+
